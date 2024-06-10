@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seko MVC PROJE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+            .card:hover {
+                transform: translateY(-5px);
+            }
+
+        .card-title {
+            color: #007bff;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            color: #6c757d;
+        }
+
+        .btn {
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+            .btn:hover {
+                background-color: #0056b3;
+            }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <div class="text-center">
+            <h1 class="display-4 text-primary">Seko MVC PROJE</h1>
+            <p class="lead text-secondary">Bu MVC projesi ile öğrenci ve ders işlemlerini kolayca yönetebilirsiniz.</p>
+        </div>
+
+        <div class="row my-4">
+            <div class="col-md-4">
+                <div class="card border-0 shadow">
+                    <div class="card-body text-center">
+                        <img src="add-student-icon.png" alt="Öğrenci Ekle" class="card-icon">
+                        <h5 class="card-title">Öğrenci Ekle</h5>
+                        <p class="card-text">Yeni bir öğrenci eklemek için buraya tıklayın.</p>
+                        <a href="/Student/AddStudent" class="btn btn-success">Öğrenci Ekle</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow">
+                    <div class="card-body text-center">
+                        <img src="add-course-icon.png" alt="Ders Ekle" class="card-icon">
+                        <h5 class="card-title">Ders Ekle</h5>
+                        <p class="card-text">Yeni bir ders eklemek için buraya tıklayın.</p>
+                        <a href="/Ders/AddDers" class="btn btn-warning">Ders Ekle</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow">
+                    <div class="card-body text-center">
+                        <img src="edit-student-icon.png" alt="Öğrenci Düzenle" class="card-icon">
+                        <h5 class="card-title">Öğrenci Düzenle</h5>
+                        <p class="card-text">Var olan bir öğrenciyi düzenlemek için buraya tıklayın.</p>
+                        <a href="/Student/EditStudent" class="btn btn-info">Öğrenci Düzenle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

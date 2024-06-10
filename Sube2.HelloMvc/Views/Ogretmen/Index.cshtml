@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğretmen İşlemleri</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sidebar {
+            background-color: #f8f9fa;
+            border-right: 1px solid #dee2e6;
+            padding: 20px;
+            height: calc(100vh - 80px);
+        }
+
+        .main-content {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            min-height: calc(100vh - 80px);
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+            .sidebar li a {
+                color: #000;
+                text-decoration: none;
+            }
+
+                .sidebar li a:hover {
+                    text-decoration: underline;
+                }
+
+        /* Buton renklerini değiştir */
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+                border-color: #0056b3;
+            }
+
+        /* Input rengini değiştir */
+        .form-control {
+            border-color: #007bff;
+        }
+
+            /* Input odaklandığında rengini değiştir */
+            .form-control:focus {
+                border-color: #0056b3;
+                box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+            }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h3>Öğretmen İşlemleri Ana sayfası</h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="#">Öğrenci Ekle</a></li>
+                        <li><a href="#">Öğrenci Listele</a></li>
+                        <li><a href="#">Not Girişi</a></li>
+                        <li><a href="#">Notları Görüntüle</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="main-content">
+                    <!-- İçerik alanı -->
+                    <h4>Hoş Geldiniz!</h4>
+                    <p>Buradan farklı öğretmen işlemlerine erişebilirsiniz.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

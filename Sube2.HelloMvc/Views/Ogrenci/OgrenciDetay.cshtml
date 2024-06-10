@@ -1,0 +1,70 @@
+﻿@model OgrViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogrenci Detay</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #89fa;
+            padding: 20px;
+        }
+        .container {
+            background-color: #ff58;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #007b9f;
+        }
+        p {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>@Model.Ders.DersAd</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Öğrenci Detayları</h3>
+                <div>
+                    @if (ViewData["ogrenci"] != null)
+                    {
+                        <p><strong>Ad:</strong> @(((Ogrenci)ViewData["ogrenci"]).Ad)</p>
+                        <p><strong>Soyad:</strong> @(((Ogrenci)ViewData["ogrenci"]).Soyad)</p>
+                        <p><strong>Numara:</strong> @(((Ogrenci)ViewData["ogrenci"]).Numara)</p>
+                    }
+                    else
+                    {
+                        <p>Öğrenci Bulunamadı!</p>
+                    }
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h3>ViewBag ile gelen öğrenci bilgileri</h3>
+                <div>
+                    @if (ViewBag.student != null)
+                    {
+                        <p><strong>Ad:</strong> @ViewBag.student.Ad</p>
+                        <p><strong>Soyad:</strong> @ViewBag.student.Soyad</p>
+                        <p><strong>Numara:</strong> @ViewBag.student.Numara</p>
+                    }
+                    else
+                    {
+                        <p>Öğrenci Bulunamadı!</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
